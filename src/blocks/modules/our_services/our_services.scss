@@ -60,6 +60,12 @@
 .divider {
     @include divider;
 }
+.title {
+    @include title;
+}
+.subtitle {
+    @include subtitle;
+}
 
 @media (max-width: 768px) {
     .our_services {
