@@ -1,0 +1,24 @@
+@mixin title {
+    font-family: Montserrat;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #555555;
+    text-align: center;
+}
+
+@mixin subtitle {
+    font-family: RobotoSlab;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #555555;
+}
+
+@mixin divider {
+    width: 50px;
+    height: 2px;
+    background-color: #555555;
+    margin: 29px auto;
+}
