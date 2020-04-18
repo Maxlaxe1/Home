@@ -36,8 +36,18 @@
     @@include("../blocks/modules/footer/footer.html")
     @@include("../blocks/modules/our_services/our_services.html")
     @@include("../blocks/modules/about/about.html")
+    @@include("../blocks/modules/works/works.html")
 
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script>
+        $('ul.works__tabs').on('click', 'li:not(.works__tab_active)', function () {
+            $(this)
+                .addClass('works__tab_active').siblings().removeClass('works__tab_active')
+                .closest('div.container').find('div.works__content').removeClass('works__content_active').eq($(this).index()).addClass('works__content_active');
+        });
+    </script>
     <script src="js/main.js"></script>
     <script src="js/vendor.js"></script>
 </body>
