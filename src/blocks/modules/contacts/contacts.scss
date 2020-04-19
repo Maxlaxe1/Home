@@ -1,0 +1,208 @@
+.contacts {
+    padding: 100px 0;
+    &__wrapper {
+        margin-top: 80px;
+        display: flex;
+    }
+    &__item {
+        position: relative;
+    }
+    &__title {
+        font-size: 14px;
+        line-height: 25px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #555555;
+        margin-left: 25px;
+        margin-top: 37px;
+        margin-bottom: 10px;
+        &_1 {
+            margin-top: 0;
+        }
+    }
+    &__descr {
+        display: block;
+        font-family: RobotoSlab;
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #555555;
+        margin-left: 25px;
+        text-decoration: none;
+        font-style: normal;
+    }
+    &__icon {
+        position: absolute;
+    }
+    &__icon_3 {
+        top: 4px;
+    }
+    &__forms {
+        margin-left: 163px;
+    }
+    &__input {
+        margin-right: 30px;
+        margin-bottom: 21px;
+        width: 330px;
+        height: 44px;
+        padding-left: 17px;
+        font-family: RobotoSlab;
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 400;
+
+        color: #555555;
+        outline: none;
+        &:focus {
+            border: 1px solid #c0301c;
+        }
+    }
+    &__description {
+        box-sizing: border-box;
+        resize: none;
+        width: 735px;
+        height: 104px;
+        padding: 17px;
+        font-family: RobotoSlab;
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #555555;
+        outline: none;
+        &:focus {
+            border: 1px solid #c0301c;
+        }
+    }
+    &__set {
+        margin-top: 21px;
+        display: flex;
+        align-items: center;
+    }
+    &__button {
+        width: 170px;
+        height: 44px;
+        border: 1px solid #555555;
+        font-family: RobotoSlab;
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: #555555;
+        background: none;
+        cursor: pointer;
+    }
+    &__text-button {
+        margin-left: 38px;
+        font-family: RobotoSlab;
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #555555;
+        span {
+            color: #c0301c;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .contacts {
+        &__forms {
+            margin-left: 83px;
+        }
+        &__input {
+            width: 280px;
+            height: 40px;
+        }
+        &__description {
+            box-sizing: border-box;
+            resize: none;
+            width: 635px;
+            
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .contacts {
+        &__wrapper {
+            box-sizing: border-box;
+            padding: 0 15px;
+        }
+        &__description {
+            width: 450px;
+            
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .contacts {
+        &__forms {
+            margin-left: 40px;
+        }
+        &__description {
+            width: 300px;
+        }
+        &__text-button {
+            margin-left: 20px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .contacts {
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__title {
+            text-align: center;
+        }
+        &__descr {
+            text-align: center;
+        }
+        &__icon {
+            position: absolute;
+            left: 65px;
+            &_2 {
+                left: 40px;
+            }
+            &_3 {
+                left: 70px;
+            }
+        }
+        &__icon_3 {
+            top: 4px;
+        }
+        &__forms {
+            margin-left: 0px;
+            
+        }
+        &__input {
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        &__description {
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        &__button {
+            display: block;
+            margin: 0 auto;
+        }
+        &__text-button {   
+            margin-top: 20px;        
+            font-size: 11px;
+            margin-left: 10px;
+        }
+        &__set {
+            margin-top: 21px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+}
