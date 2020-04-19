@@ -1,0 +1,37 @@
+.footer {
+    padding: 100px 0;
+    background-color: #c0301c;
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+    }
+    &__round {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35px;
+        height: 35px;
+        border: 2px solid #ffffff;
+        border-radius: 100%;
+        margin: 0 7px;
+        cursor: pointer;      
+        span { 
+            color: #fff;
+            font-size: 20px;
+            
+        }
+    }
+    .divider_white {
+        background: #fff;
+    }
+    &__firm {
+        font-family: RobotoSlab;
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #ffffff;
+        text-align: center;
+    }
+}
