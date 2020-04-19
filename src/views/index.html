@@ -31,8 +31,8 @@
 </head>
 
 <body>
-
-    @@include("../blocks/modules/header/header.html")    
+    
+    @@include("../blocks/modules/header/header.html")
     @@include("../blocks/modules/our_services/our_services.html")
     @@include("../blocks/modules/about/about.html")
     @@include("../blocks/modules/works/works.html")
@@ -51,6 +51,22 @@
                 .addClass('works__tab_active').siblings().removeClass('works__tab_active')
                 .closest('div.container').find('div.works__content').removeClass('works__content_active').eq($(this).index()).addClass('works__content_active');
         });
+        
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 1600) {
+                    $('.pageup').fadeIn();
+                } else {
+                    $('.pageup').fadeOut();
+                }
+            });
+
+            $("a[href=#up]").click(function () {
+                const _href = $(this).attr("href");
+                $("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
+                return false;
+            });
+        
+
     </script>
     <script src="js/main.js"></script>
     <script src="js/vendor.js"></script>
