@@ -36,8 +36,8 @@
         justify-content: center;
     }
     &__img {
-        margin: 5px;
         max-width: 355px;
+        margin: 5px;
         &:hover {
             cursor: pointer;
             opacity: 0.8;
@@ -49,7 +49,6 @@
     .works {
         &__img {
             max-width: 46%;
-            
         }
     }
 }
